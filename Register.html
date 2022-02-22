@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url('bg.jpg');
+    background-repeat: no-repeat;
+	  background-size: cover;
+}
+* {box-sizing: border-box}
+
+h1{
+  color: white;
+  text-align: center;
+}
+
+
+input[type=text], input[type=password], input[type=email], input[type=tel] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 10px 22px 10px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  height: 15px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus , input[type=email]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.container {
+ color:white;
+  padding: 30px;
+  padding-bottom: 80px;
+  padding-top: 10px;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:1px solid #ccc;
+  background-color:rgba(12, 11, 11, 0.829);
+}
+
+
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+/* 
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  } */
+/* } */
+</style>
+<body>
+
+
+<form action="register.php" method="POST">
+  <div class="container">
+    <h1>SIGN UP</h1>
+    <h3>Please fill in this form to create an account.</h3>
+    <hr>
+
+    <label for="username"><b>UserName</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+	
+	  <label for="number"><b>Mobile Number</b></label>
+    <input type="tel" placeholder="Enter mobile no" name="number" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <label for="psw-confirm"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="confirm_password" required>
+    
+
+      <button type="button" class="cancelbtn" onclick="window.location.href = 'index.html';">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    
+  </div>
+</form>
+
+</body>
+</html>
